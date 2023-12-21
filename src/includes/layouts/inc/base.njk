@@ -1,0 +1,41 @@
+{% block template %}{% endblock %}
+<!doctype html>
+<html lang="en-US" itemscope itemtype="http://schema.org/WebPage">
+    <head>
+        <title>{{ title or metadata.title }} - everybodyloveshead.com</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name=robots content="index,follow">
+        <meta name="description" content="{{ description or metadata.description }}">
+        <meta name="keywords" content="{{keywords}}">
+        <link rel="canonical" href="{{permalink}}">
+        <meta name="subject" content="{{ description or metadata.description }}">
+        <meta name="revised" content="{{page.publishDate}}">
+        <meta name='Classification' content='Business'>
+        <meta name='url' content='{{page.url}}'>
+        <meta http-equiv='Expires' content='0'>
+        <meta http-equiv='Pragma' content='no-cache'>
+        <meta http-equiv='Cache-Control' content='no-cache'>
+        <meta http-equiv='imagetoolbar' content='no'>
+        <meta http-equiv='x-dns-prefetch-control' content='off'>
+        <meta property="og:title" content="{{ title or metadata.title }}"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:url" content="{{page.url}}"/>
+        <meta property="og:image" content="{{thumb}}"/>
+        <meta property="og:description" content="{{ description or metadata.description }}">
+        <meta property="og:site_name" content="{{site.name}}"/>
+        <link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico">
+        <link rel="stylesheet" href="/assets/styles/main.css"/>
+        <script src="{{ '/assets/scripts/main.js' | url }}" defer></script>
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        <div class="page-wrapper">
+            {%- include "./header.njk" -%}
+            <div class="site-wrapper max-content-width">
+                {% block content %}{% endblock %}
+            </div>
+            {%- include "./footer.njk" -%}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+{%- macro debugger(data) -%}
+    <details>
+        <summary>Show object</summary>
+        <pre>{{data | prettyjson}}</pre>
+    </details>
+{%- endmacro -%}

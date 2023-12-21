@@ -1,0 +1,38 @@
+$breakpoints: (
+  "none": 0,
+  "xs": 320,
+  "sm": 640,
+  "md": 1024,
+  "lg": 1280,
+  "xl": 1600,
+);
+
+//Colors
+
+$black: #000000;
+$white: #ffffff;
+$off-white: #dcdcdc;
+$off-black: #0f130f;
+$grey-666: #666;
+$flat-green: #627d14;
+$dark-green: #27401f;
+$dark-blue: #07345b;
+$flat-blue: #417aab;
+$eggshell-blue: #e5f3ff;
+$lightest-blue: #edf0f2;
+$yellow: yellow;
+$red: rgb(177, 40, 40);
+
+$body-bg: $white;
+$content-bg: $white;
+$header-bg: $white;
+$footer-bg: $eggshell-blue;
+
+$content-color-main: $off-black;
+$header-color-main: $black;
+$footer-color-main: $off-white;
+
+$font-header: sans-serif;
+$font-content: sans-serif;
+
+$padding-section: 50px 100px 75px;

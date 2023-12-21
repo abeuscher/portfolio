@@ -1,0 +1,13 @@
+---
+permalink: /
+eleventyComputed:
+  title: "Alex Beuscher - Resume and Portfolio"
+  description: "Alex Beuscher - Resume and Portfolio"
+---
+{% extends "layouts/inc/base.njk" %}
+{%- from "macros/debugger/debugger.njk" import debugger -%}
+
+{% block content %}
+  <p>test</p>
+  {{debugger(siteData)}}
+{% endblock %}

@@ -1,0 +1,18 @@
+@mixin min-width($breakpoint) {
+  @each $bp, $val in $breakpoints {
+    @if ($bp == $breakpoint) {
+      @media (min-width: "#{$val}px") {
+        @content;
+      }
+    }
+  }
+}
+@mixin max-width($breakpoint) {
+  @each $bp, $val in $breakpoints {
+    @if ($bp == $breakpoint) {
+      @media (max-width: "#{$val}px") {
+        @content;
+      }
+    }
+  }
+}
