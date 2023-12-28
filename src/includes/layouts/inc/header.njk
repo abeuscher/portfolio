@@ -1,1 +1,18 @@
-<header></header>
+<header>
+    <h1>{{siteData.siteTitle}}</h1>
+    <h2>{{siteData.siteSubtitle}}</h2>
+    <div class="contact-info">
+        <p>
+            <a href="mailto:{{siteData.emailAddress}}">{{siteData.emailAddress}}</a>
+        </p>
+        <p>
+            <a href="tel:{{siteData.phoneNumber}}">{{siteData.phoneNumber}}</a>
+        </p>
+        <p>
+            <a href="{{siteData.linkedInProfile}}">LinkedIn</a>
+        </p>
+    </div>
+    <p class="pdf-link">
+        <a href="{{siteData.pdfVersion.fields.file.url}}">PDF version</a>
+    </p>
+</header>

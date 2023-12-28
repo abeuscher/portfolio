@@ -6,8 +6,17 @@ eleventyComputed:
 ---
 {% extends "layouts/inc/base.njk" %}
 {%- from "macros/debugger/debugger.njk" import debugger -%}
+{%- from "macros/job-listing/job-listing.njk" import joblisting -%}
 
+{%- include "layouts/inc/header.njk" -%}
 {% block content %}
-  <p>test</p>
+  <section class="jobs">
+    {%- for job in jobData -%}
+      {{joblisting(job.fields)}}
+    {%- endfor -%}
+  </section>
+
+  {{debugger(jobData)}}
   {{debugger(siteData)}}
 {% endblock %}
+{%- include "layouts/inc/footer.njk" -%}
