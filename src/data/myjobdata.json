@@ -1,0 +1,426 @@
+{
+  "config": {
+    "imgPath": "/images/"
+  },
+  "meta": {
+    "title": "Alex Beuscher : Portfolio and Resume",
+    "author": "Alex Beuscher",
+    "description": "Alex Beuscher is a web developer living in Alameda, CA. He has most recently worked at Dynamic Signal in San Bruno, CA and is seeking new employment opportunities.",
+    "keywords": "front end developer, web development alameda",
+    "site_url": "alexbeuscher.com",
+    "site_thumb": "al_pic-lg.jpg"
+  },
+  "header": {
+    "name": "Alex Beuscher",
+    "site_title": "Portfolio & Resume",
+    "nav": [
+      {
+        "text": "Github",
+        "class": "icon-github",
+        "url": "https://github.com/abeuscher/portfolio-site"
+      },
+      {
+        "text": "LinkedIn",
+        "class": "icon-linkedin",
+        "url": "https://www.linkedin.com/in/alex-beuscher-8314157/"
+      },
+      {
+        "text": "PDF",
+        "url": "/resume_alexbeuscher.pdf"
+      }
+    ],
+    "contact": [
+      {
+        "text": "alexbeuscher@gmail.com",
+        "url": "mailto:alexbeuscher@gmail.com"
+      },
+      {
+        "text": "(617) 359-6971",
+        "url": "tel:6173596971"
+      }
+    ]
+  },
+  "footer": {
+    "legal": "© Alex Beuscher 2020"
+  },
+  "overview": {
+    "title": "overview",
+    "intro_header": "Overview",
+    "intro": "I am a web developer working in the San Francisco Bay Area. I have spent most of the past twenty years as a lead or sole tech within marketing departments. I enjoy bringing order to chaos. Much of my work has been client facing, interacting directly with stakeholders and other producers. Together we have turned business needs and brand identities into successful websites and web applications. I am experienced at working in high stress, clutch situations; I have participated in global product launches, run multiple camera live video shoots, and been with several startups as they have scaled into large companies.",
+    "skills_header": "Skills",
+    "skills": [
+      {
+        "title": "Javascript",
+        "level": 3
+      },
+      {
+        "title": "HTML",
+        "level": 3
+      },
+      {
+        "title": "CSS / SCSS",
+        "level": 3
+      },
+      {
+        "title": "Wordpress",
+        "level": 3
+      },
+      {
+        "title": "Gulp",
+        "level": 2
+      },
+      {
+        "title": "PHP",
+        "level": 2
+      },
+      {
+        "title": "ZenDesk",
+        "level": 2
+      },
+      {
+        "title": "Git",
+        "level": 3
+      },
+      {
+        "title": "Pug",
+        "level": 3
+      },
+      {
+        "title": "Adobe Design",
+        "level": 3
+      },
+      {
+        "title": "Marketo",
+        "level": 3
+      },
+      {
+        "title": "SQL",
+        "level": 2
+      },
+      {
+        "title": "C#",
+        "level": 1
+      },
+      {
+        "title": "Vue",
+        "level": 1
+      },
+      {
+        "title": "React",
+        "level": 3
+      },
+      {
+        "title": "Gatsby",
+        "level": 1
+      },
+      {
+        "title": "Node.js",
+        "level": 1
+      },
+      {
+        "title": "Mongo DB",
+        "level": 1
+      },
+      {
+        "title": "Express",
+        "level": 1
+      },
+      {
+        "title": "GraphQL",
+        "level": 3
+      },
+      {
+        "title": "Final Cut",
+        "level": 2
+      },
+      {
+        "title": "Adobe Premier",
+        "level": 2
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "portfolio",
+    "template": "portfolio.pug",
+    "sites_title": "Case Studies",
+    "sites": [
+      {
+        "title": "Dynamic Signal",
+        "thumbs": ["thm-dynamicsignal-desktop.jpg", "thm-dynamicsignal-mobile.jpg"],
+        "role": "Developer / Designer",
+        "tech": "Wordpress, Pug, Gulp",
+        "description": "I came into this site after it had been online for four years and reworked through several agencies. I rebuilt the theme using modern practices, implemented version control, and removed all front end plugins. I was able to reduce page load time from an average of 14s per page to a more reasonable 2.5s per page. I was then able to help the content team double time spent on page and significantly increase organic search traffic. Through funnel optimization and UX improvement, total site conversions have doubled.",
+        "url": "https://www.dynamicsignal.com",
+        "modal_thumb": "thm-ds.jpg"
+      },
+      {
+        "title": "Dynamic Signal Support",
+        "thumbs": ["thm-dssupport-desktop.jpg", "thm-dssupport-mobile.jpg"],
+        "role": "Developer",
+        "tech": "Zendesk, Vue, Theming & Customization",
+        "description": "The Dynamic Signal Support site is built on the ZenDesk platform using a custom theme. This was a cross-departmental effort which I ran and coordinated. This work also included some light work with Vue, as that is what ZenDesk's front end is built with.",
+        "url": "https://support.dynamicsignal.com",
+        "modal_thumb": "thm-ds.jpg"
+      },
+      {
+        "title": "XCOM",
+        "thumbs": ["thm-xcom-desktop.jpg", "thm-xcom-mobile.jpg"],
+        "role": "Developer",
+        "tech": "Expression Engine, Telemetry, Localization",
+        "description": "This was 2k's first experimentation with surfacing in game live stats to enrich the user experience at the site and provide some connectivity to the game. We used ajax calls to collect and store stats locally on our server, then built a dynamic infographic displaying community stats from these data.",
+        "url": "https://www.xcom.com",
+        "modal_thumb": "thm-xcom-modal.jpg"
+      },
+      {
+        "title": "WWE 2K",
+        "thumbs": ["thm-wwe-desktop.jpg", "thm-wwe-mobile.jpg"],
+        "role": "Developer",
+        "tech": "Expression Engine, Localization, Oauth",
+        "description": "This site was our department's first effort in building a localized site. In its original iteration, we supported Spanish and English, using Expression Engine's built in localization features for support.",
+        "url": "https://wwe.2k.com/",
+        "modal_thumb": "thm-wwe-modal.jpg"
+      },
+      {
+        "title": "WWE 2K Logo Uploader",
+        "thumbs": ["thm-uploader-desktop.jpg"],
+        "role": "Developer",
+        "tech": "PHP, Rest API, Memcache, Oauth",
+        "description": "This site was built to interface with the in-game experience of WWE 2K '17. Players could upload and manage their in game images from the site. This was a front end application built in javascript with a php component, connecting to a REST API endpoint provided through a third party. The interior design of the application was skinned to match the in game experience.",
+        "modal_thumb": "thm-wwe-modal.jpg"
+      },
+      {
+        "title": "Borderlands",
+        "thumbs": ["thm-borderlands-desktop.jpg", "thm-borderlands-mobile.jpg"],
+        "role": "Developer",
+        "tech": "Expression Engine, Localization, Social Media API",
+        "description": "Borderlands is a large, well known franchise. The challenge here was in creating a visual spectacle with the site to showcase the franchise's unique look and feel. Also, with a large amount of DLC, the relationships between various products and package deals was a taxonomical challenge. With a localized site, content spaces with so much imagery had to be carefully designed to be flexible to fit differently sized strings. Additionally, the site featured social media API interaction and a Skill Tree calculator web application.",
+        "url": "https://www.borderlandsthegame.com/",
+        "modal_thumb": "thm-borderlands-modal.jpg"
+      },
+      {
+        "title": "Hangar 13 Games",
+        "thumbs": ["thm-hangar13-desktop.jpg", "thm-hangar13-mobile.jpg"],
+        "role": "Developer",
+        "tech": "Static Generated, Continuous Deployment, Rest API based CMS, Jade/Pug",
+        "description": "This is a small site for one of 2k's Game Developers. It is fed by a centralized CMS, and statically generated under continuous deploy using TeamCity as the build agent. With smaller clients, there is often a problem of throughput. In this case, the studio's active social media activity to keep their site in the moment, along with relevant aggregated news from mafiagame.com, which showcases the studios current offering, Mafia 3. By organizing the content in chronological order from most recent, returning visitors are given content to engage with the studio on, with very little additional input from their team.",
+        "url": "https://hangar13games.com/",
+        "modal_thumb": "thm-hangar13-modal.jpg"
+      },
+      {
+        "title": "MCO Productions",
+        "thumbs": ["thm-mco-desktop.jpg"],
+        "role": "Private Contractor",
+        "tech": "Cockpit CMS, Pug, Templating",
+        "description": "This is a site built for Michael O'Neill, who provides DJ services for weddings and events throughout New England. The site is built with Cockpit CMS and custom. Design work was sub contracted, and provided as PSD's. I did the site build using a basic preprocessing script leveraging gulp and browserify, and the templates are done in php. This was a straightforward job with an old friend and client, and I am happy with the result.",
+        "url": "http://mcoproductions.com"
+      }
+    ]
+  },
+  "resume": {
+    "title": "resume",
+    "template": "jobs.pug",
+    "intro": "",
+    "pdf_link": "",
+    "jobs_title": "Work History",
+    "jobs": [
+      {
+        "name": "Contentstack",
+        "description": "Contentstack is a headless CMS provider. I currently work as team lead with a group of developers in India to build and support the company's marketing and documentation sites.",
+        "location": "San Diego, CA",
+        "url": "contentstack.com",
+        "thumb": "thm-ds.jpg",
+        "positions": [
+          {
+            "time_span": "2020 - present",
+            "title": "Senior Web Developer & Team Lead",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "Dynamic Signal",
+        "description": "Dynamic Signal is a B2B Saas company. I have been in charge of their public facing web properties for the past several years. This includes a public Wordpress Site, a support site at Zendesk, a Marketo Installation, and a Content Hub at Uberflip among others. Along with development and maintenance, my work also involved analytics, strategy, and content creation.",
+        "location": "San Bruno, CA",
+        "url": "dynamicsignal.com",
+        "thumb": "thm-ds.jpg",
+        "positions": [
+          {
+            "time_span": "2018 - 2020",
+            "title": "Senior Web Developer",
+            "description": ""
+          },
+          {
+            "time_span": "2017 - 2018",
+            "title": "Web Production Manager",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "2K Games",
+        "description": "2K Games is a video game publisher of titles such as Borderlands, Civilization, and NBA 2K. I was the first full time web developer in 2K's marketing department. Previous to my arrival, sites were built through managed agencies. After implementing basic processes, source control, and tightening security, I was promoted and my team got a second developer. Together, we modified a centralized CMS, set it up as a REST API, and built a continuous deploy process using Amazon's AWS services. We were then able to consolidate our content editing and localization efforts and the content machine became much more robust. The system we built is still in use today and has expanded to support many other features in the 2K ecosystem.",
+        "location": "Novato, CA",
+        "url": "2k.com",
+        "thumb": "thm-2k.jpg",
+        "positions": [
+          {
+            "time_span": "2016 - 2017",
+            "title": "Senior Web Developer",
+            "description": ""
+          },
+          {
+            "time_span": "2013 - 2016",
+            "title": "Web Developer",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "Medley Health",
+        "description": "Medley was a startup company in the medical industry, who provided membership model practice management services for primary care physicians. I ran their public websites, managed content, and provided other web related support and development. The company is now defunct.",
+        "location": "Dublin, CA",
+        "url": "",
+        "thumb": "thm-medley.jpg",
+        "positions": [
+          {
+            "time_span": "2011 - 2012",
+            "title": "Web Content Manager / Developer",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "WAAF and Mike FM (Entercom)",
+        "description": "WAAF and Mike FM are/were two Boston music radio stations owned by Entercom. WAAF remains a top rated station, while Mike FM has since gone off-air. I managed a team of content producers, and also worked in a variety of roles to support and create video, web, and mobile content for our listeners in conjunction with our station's on-air personalities as well as local and national celebrities. On the development side, I built several novelty apps which we hosted at the station sites, and provided ongoing support and development for online contesting, event specific microsites, and ad placement on the site. I also coached staff and online personalities on blog writing and engaging with their audience over social media.",
+        "location": "Brighton, MA",
+        "url": "waaf.com",
+        "thumb": "thm-waaf.jpg",
+        "positions": [
+          {
+            "time_span": "2008 - 2011",
+            "title": "Online Content Director",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "Boston Interactive",
+        "description": "Boston Interactive is a leading design firm. My duties as a developer there ranged from markup and CSS layout to some php programming projects and a good deal of javascript work. Among the clients serviced were FAO Schwartz, New England Coffee, MedAssets, and others.",
+        "location": "Charlestown, MA",
+        "url": "bostoninteractive.com",
+        "thumb": "thm-bi.jpg",
+        "positions": [
+          {
+            "time_span": "2007 - 2008",
+            "title": "Web Developer",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "Nurse-Recruiter.com",
+        "description": "Nurse-Recruiter is an online job portal for nurses, similar to Monster.com but specialized. My duties included the design and implementation of an intranet, and redevelopment of web software from PERL into PHP. I also rewrote most of the content on the site for SEO value as well as style, and increased total web visitors as well as goal conversions by over 100% in 10 months.",
+        "location": "Wellesley, MA",
+        "url": "nurse-recruiter.com",
+        "thumb": "thm-nr.jpg",
+        "positions": [
+          {
+            "time_span": "2006 - 2007",
+            "title": "Lead Web Developer",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "MCO Productions",
+        "description": "I have run pub trivia on and off for years, and have experience in DJ'ing and MC'ing functions such as weddings, special events, and parties. I have a full PA system and contract independently.",
+        "location": "Brighton, MA",
+        "url": "mcoproductions.com",
+        "thumb": "thm-mco.jpg",
+        "positions": [
+          {
+            "time_span": "2001 - 2011",
+            "title": "Trivia DJ",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "Freelance Web Design",
+        "description": "I work on and off as a freelance developer and designer. Along with my web work, I do consulting in basic IT, application training, and print design. Clients have included film, healthcare, environmental, and other concerns. I continue to support a small number of clients.",
+        "location": "Allston, MA / Alameda, CA",
+        "url": "alexbeuscher.com",
+        "thumb": "thm-self.jpg",
+        "positions": [
+          {
+            "time_span": "1998 - present",
+            "title": "Self Employed",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "SSDS",
+        "description": "Solomon Schechter Day School is a private elementary school. I taught video and web design to children ages 9 to 12 at their After School Program. For video, students learned to work with a camera, plan movies, and make short films. In web we learned to make a basic site using a text editor and graphics tools.",
+        "location": "",
+        "url": "ssdsboston.org",
+        "thumb": "thm-ssds.jpg",
+        "positions": [
+          {
+            "time_span": "2001 - 2003",
+            "title": "Afterschool Instructor",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "name": "AMICAS, Inc.",
+        "description": "AMICAS provided software for the management and viewing of medical images (x-rays) inside of a web browser on standard PC's. My responsibilities included redesign and implementation of public website as well as the design of an Intranet Site and Customer Support Center.",
+        "location": "Brighton, MA / Chicago, IL",
+        "url": "",
+        "thumb": "thm-amicas.jpg",
+        "positions": [
+          {
+            "time_span": "1997 - 2000",
+            "title": "Webmaster",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  "education": [{}, {}],
+  "skills": [
+    {
+      "title": "Languages",
+      "items": ["PHP", "SQL", "HTML", "CSS", "Javascript", "jQuery", "ASP", "Angular"]
+    },
+    {
+      "title": "Tools",
+      "items": [
+        "Expression Engine",
+        "Wordpress",
+        "Drupal",
+        "Git",
+        "Cockpit CMS",
+        "vBulletin",
+        "Adobe Design Suite",
+        "Maya",
+        "ZenDesk",
+        "Jade/Pug",
+        "More"
+      ]
+    },
+    {
+      "title": "Other",
+      "items": [
+        "Video Production",
+        "Audio Editing / Voice Over",
+        "DJ",
+        "Teacher (uncertified)",
+        "Drums (intermediate)",
+        "Writing (technical, journalistic, copy editing)"
+      ]
+    }
+  ]
+}

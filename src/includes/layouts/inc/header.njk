@@ -1,18 +1,8 @@
+{%- from "macros/list-menu/list-menu.njk" import listmenu -%}
 <header>
-    <h1>{{siteData.siteTitle}}</h1>
-    <h2>{{siteData.siteSubtitle}}</h2>
-    <div class="contact-info">
-        <p>
-            <a href="mailto:{{siteData.emailAddress}}">{{siteData.emailAddress}}</a>
-        </p>
-        <p>
-            <a href="tel:{{siteData.phoneNumber}}">{{siteData.phoneNumber}}</a>
-        </p>
-        <p>
-            <a href="{{siteData.linkedInProfile}}">LinkedIn</a>
-        </p>
-    </div>
-    <p class="pdf-link">
-        <a href="{{siteData.pdfVersion.fields.file.url}}">PDF version</a>
-    </p>
+    <div class="hidden-thumb"><img src="{{myjobdata.config.imgPath + myjobdata.meta.site_thumb}}" alt=""/></div>
+    <h1>{{myjobdata.header.name}}</h1>
+    <h2>{{myjobdata.header.site_title}}</h2>
+    {{listmenu(myjobdata.header.nav,"main")}}
+    {{listmenu(myjobdata.header.contact,"contact")}}
 </header>

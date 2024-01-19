@@ -11,12 +11,11 @@ eleventyComputed:
 {%- include "layouts/inc/header.njk" -%}
 {% block content %}
   <section class="jobs">
-    {%- for job in jobData -%}
-      {{joblisting(job.fields)}}
+    {%- for job in myjobdata.resume.jobs -%}
+      {{joblisting(job)}}
     {%- endfor -%}
   </section>
 
-  {{debugger(jobData)}}
-  {{debugger(siteData)}}
+  {{debugger(myjobdata)}}
 {% endblock %}
 {%- include "layouts/inc/footer.njk" -%}

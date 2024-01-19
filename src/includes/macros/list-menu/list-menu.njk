@@ -1,0 +1,11 @@
+{%- macro listmenu(data,className) -%}
+    <nav class="{{className}}">
+        <ul>
+            {%- for item in data -%}
+                <li>
+                    <a href="{{item.url}}">{{item.text}}</a>
+                </li>
+            {%- endfor -%}
+        </ul>
+    </nav>
+{%- endmacro -%}
