@@ -139,7 +139,7 @@
       }
     ]
   },
-  "portfolio": {
+  "casestudies": {
     "title": "portfolio",
     "template": "portfolio.pug",
     "sites_title": "Case Studies",

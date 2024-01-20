@@ -10,12 +10,34 @@ eleventyComputed:
 
 {%- include "layouts/inc/header.njk" -%}
 {% block content %}
+  <section class="intro">
+    <h2>{{sitedata.overview.intro_header}}</h2>
+    <p>{{sitedata.overview.intro}}</p>
+  </section>
+  <section class="skills">
+    <h2>{{sitedata.overview.skills_header}}</h2>
+    <div>
+      {%- for skill in sitedata.overview.skills -%}
+        <span>{{skill.title}},&nbsp;</span>
+      {%- endfor -%}
+    </div>
+  </section>
+  <section class="case-studies">
+    <h2>{{sitedata.casestudies.sites_title}}</h2>
+    {%- for site in sitedata.casestudies.sites -%}
+      <h3>{{site.title}}</h3>
+      <h4>{{site.role}}</h4>
+      <h5>{{site.tech}}</h5>
+      <p>{{site.description}}</p>
+    {%- endfor -%}
+  </section>
   <section class="jobs">
-    {%- for job in myjobdata.resume.jobs -%}
+    <h2>{{sitedata.resume.jobs_title}}</h2>
+    {%- for job in sitedata.resume.jobs -%}
       {{joblisting(job)}}
     {%- endfor -%}
   </section>
 
-  {{debugger(myjobdata)}}
+  {{debugger(sitedata)}}
 {% endblock %}
 {%- include "layouts/inc/footer.njk" -%}

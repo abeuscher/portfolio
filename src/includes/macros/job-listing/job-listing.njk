@@ -1,6 +1,15 @@
 {%- macro joblisting(data) -%}
     <div class="job-listing">
-        <h3>{{data.name}}</h3>
-        <p>{{data.description}}</p>
+        <div class="col-left">
+            <h3>{{data.name}}</h3>
+            {%- for position in data.positions -%}
+                <p>{{position.title}}</p>
+                <p>{{position.time_span}}</p>
+            {%- endfor -%}
+        </div>
+        <div class="col-right">
+            <h4>{{data.location}}</h4>
+            <p>{{data.description}}</p>
+        </div>
     </div>
 {%- endmacro -%}
