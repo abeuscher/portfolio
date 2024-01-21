@@ -1,5 +1,83 @@
+body {
+  font-family: $font-content;
+}
+.page-wrapper {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto 100px;
+}
+
 section {
   h2 {
     border-bottom: 1px solid black;
+  }
+}
+nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    li {
+      display: inline-block;
+    }
+  }
+}
+.job-listing {
+  display: flex;
+  .col-left {
+    flex-basis: 20%;
+    text-align: right;
+  }
+  .col-right {
+    flex-basis: 80%;
+    margin-left: 50px;
+  }
+}
+.timespan {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.position {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 0;
+}
+.case-study-grid,
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.case-study {
+  flex-basis: 33%;
+}
+
+.skill-tile {
+  flex-basis: 33%;
+}
+.skills {
+  h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      &:after {
+        content: ", ";
+      }
+      &:last-child {
+        &:after {
+          content: "";
+        }
+      }
+    }
   }
 }

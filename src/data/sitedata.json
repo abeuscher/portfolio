@@ -41,115 +41,31 @@
     ]
   },
   "footer": {
-    "legal": "© Alex Beuscher 2020"
+    "legal": "© Alex Beuscher 2024"
   },
   "overview": {
     "title": "overview",
     "intro_header": "Overview",
-    "intro": "I am a web developer working in the San Francisco Bay Area. I have spent most of the past twenty years as a lead or sole tech within marketing departments. I enjoy bringing order to chaos. Much of my work has been client facing, interacting directly with stakeholders and other producers. Together we have turned business needs and brand identities into successful websites and web applications. I am experienced at working in high stress, clutch situations; I have participated in global product launches, run multiple camera live video shoots, and been with several startups as they have scaled into large companies.",
-    "skills_header": "Skills",
-    "skills": [
-      {
-        "title": "Javascript",
-        "level": 3
-      },
-      {
-        "title": "HTML",
-        "level": 3
-      },
-      {
-        "title": "CSS / SCSS",
-        "level": 3
-      },
-      {
-        "title": "Wordpress",
-        "level": 3
-      },
-      {
-        "title": "Gulp",
-        "level": 2
-      },
-      {
-        "title": "PHP",
-        "level": 2
-      },
-      {
-        "title": "ZenDesk",
-        "level": 2
-      },
-      {
-        "title": "Git",
-        "level": 3
-      },
-      {
-        "title": "Pug",
-        "level": 3
-      },
-      {
-        "title": "Adobe Design",
-        "level": 3
-      },
-      {
-        "title": "Marketo",
-        "level": 3
-      },
-      {
-        "title": "SQL",
-        "level": 2
-      },
-      {
-        "title": "C#",
-        "level": 1
-      },
-      {
-        "title": "Vue",
-        "level": 1
-      },
-      {
-        "title": "React",
-        "level": 3
-      },
-      {
-        "title": "Gatsby",
-        "level": 1
-      },
-      {
-        "title": "Node.js",
-        "level": 1
-      },
-      {
-        "title": "Mongo DB",
-        "level": 1
-      },
-      {
-        "title": "Express",
-        "level": 1
-      },
-      {
-        "title": "GraphQL",
-        "level": 3
-      },
-      {
-        "title": "Final Cut",
-        "level": 2
-      },
-      {
-        "title": "Adobe Premier",
-        "level": 2
-      }
-    ]
+    "intro": "I am a web developer living in Amesbury, MA. I have spent most of the past twenty years as a lead or sole tech within marketing departments. Much of my work has been client facing, interacting directly with stakeholders and other producers. Together we have turned business needs and brand identities into successful websites and web applications. I have participated in global product launches, run multiple camera live video shoots, and been with several startups as they have scaled into large companies. I am currently primarily seeking opportunities in the cannabis space but I am always open to conversation."
   },
   "casestudies": {
-    "title": "portfolio",
-    "template": "portfolio.pug",
-    "sites_title": "Case Studies",
+    "title": "Case Studies",
     "sites": [
+      {
+        "title": "Contentstack",
+        "thumbs": ["thm-dynamicsignal-desktop.jpg", "thm-dynamicsignal-mobile.jpg"],
+        "role": "Developer",
+        "tech": "Gatsby, Contentstack",
+        "description": "The assignment here was to take a junior team and improve the quality fo work they were delivering while also helping to internally overhaul the web department. We of course used our own product as a CMS, and spent a good deal of the year I worked here cleaning up years and years of tech debt. We were able to reduce the size of the codebase by about half, and also dramatically imoproved turnaround time onnew work by around 200%.",
+        "url": "https://www.skydio.com",
+        "modal_thumb": "thm-ds.jpg"
+      },
       {
         "title": "Dynamic Signal",
         "thumbs": ["thm-dynamicsignal-desktop.jpg", "thm-dynamicsignal-mobile.jpg"],
         "role": "Developer / Designer",
         "tech": "Wordpress, Pug, Gulp",
-        "description": "I came into this site after it had been online for four years and reworked through several agencies. I rebuilt the theme using modern practices, implemented version control, and removed all front end plugins. I was able to reduce page load time from an average of 14s per page to a more reasonable 2.5s per page. I was then able to help the content team double time spent on page and significantly increase organic search traffic. Through funnel optimization and UX improvement, total site conversions have doubled.",
+        "description": "I came into this site after it had been online for four years and reworked through several agencies. I rebuilt the theme using modern practices, implemented version control, and removed all front end plugins. I was able to reduce page load time from an average of 14s per page to a more reasonable 2.5s per page. I was then able to help the content team double time spent on page and significantly increase organic search traffic. Through funnel optimization and UX improvement, total site conversions doubled.",
         "url": "https://www.dynamicsignal.com",
         "modal_thumb": "thm-ds.jpg"
       },
@@ -217,11 +133,8 @@
     ]
   },
   "resume": {
-    "title": "resume",
-    "template": "jobs.pug",
-    "intro": "",
+    "title": "Work History",
     "pdf_link": "",
-    "jobs_title": "Work History",
     "jobs": [
       {
         "name": "Contentstack",
@@ -231,7 +144,7 @@
         "thumb": "thm-ds.jpg",
         "positions": [
           {
-            "time_span": "2020 - present",
+            "time_span": "2020 - 2022",
             "title": "Senior Web Developer & Team Lead",
             "description": ""
           }
@@ -389,38 +302,74 @@
       }
     ]
   },
-  "education": [{}, {}],
-  "skills": [
-    {
-      "title": "Languages",
-      "items": ["PHP", "SQL", "HTML", "CSS", "Javascript", "jQuery", "ASP", "Angular"]
-    },
-    {
-      "title": "Tools",
-      "items": [
-        "Expression Engine",
-        "Wordpress",
-        "Drupal",
-        "Git",
-        "Cockpit CMS",
-        "vBulletin",
-        "Adobe Design Suite",
-        "Maya",
-        "ZenDesk",
-        "Jade/Pug",
-        "More"
-      ]
-    },
-    {
-      "title": "Other",
-      "items": [
-        "Video Production",
-        "Audio Editing / Voice Over",
-        "DJ",
-        "Teacher (uncertified)",
-        "Drums (intermediate)",
-        "Writing (technical, journalistic, copy editing)"
-      ]
-    }
-  ]
+  "education": {
+    "title": "Education",
+    "credentials": [
+      {
+        "school": "Emerson College",
+        "degree": "BFA in Writing, Litgerature, and Publishing"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "sections": [
+      {
+        "title": "Languages / Frameworks",
+        "items": [
+          "Javascript",
+          "Node",
+          "React",
+          "Vue",
+          "Angular",
+          "HTML",
+          "CSS",
+          "PHP",
+          "SQL",
+          "C++",
+          "Python"
+        ]
+      },
+      {
+        "title": "Tools",
+        "items": [
+          "Wordpress",
+          "Contentful",
+          "Contentstack",
+          "Sanity.io",
+          "11ty",
+          "Git",
+          "ZenDesk",
+          "Marketo",
+          "Google Analytics / G4",
+          "Figma",
+          "Shopify",
+          "BigCommerce",
+          "Expression Engine",
+          "Smartling",
+          "Drupal",
+          "Cockpit CMS",
+          "vBulletin",
+          "FinalCut",
+          "Adobe Design Suite",
+          "Maya"
+        ]
+      },
+      {
+        "title": "Other",
+        "items": [
+          "SEO",
+          "Web Content Strategy",
+          "Marketing",
+          "Localization",
+          "Video Production",
+          "Audio Editing / Voice Over",
+          "DJ",
+          "Teacher (uncertified)",
+          "Drums (intermediate)",
+          "Writing (technical, journalistic, copy editing)"
+        ]
+      }
+    ]
+  }
 }
