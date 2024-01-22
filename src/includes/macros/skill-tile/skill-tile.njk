@@ -1,0 +1,10 @@
+{%- macro skilltile(data) -%}
+    <div class="skill-tile">
+        <h3>{{data.title}}</h4>
+        <p>
+            {%- for item in data.items -%}
+                <span>{{item}}</span>
+            {%- endfor -%}
+        </p>
+    </div>
+{%- endmacro -%}

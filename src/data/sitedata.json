@@ -56,8 +56,8 @@
         "thumbs": ["thm-dynamicsignal-desktop.jpg", "thm-dynamicsignal-mobile.jpg"],
         "role": "Developer",
         "tech": "Gatsby, Contentstack",
-        "description": "The assignment here was to take a junior team and improve the quality fo work they were delivering while also helping to internally overhaul the web department. We of course used our own product as a CMS, and spent a good deal of the year I worked here cleaning up years and years of tech debt. We were able to reduce the size of the codebase by about half, and also dramatically imoproved turnaround time onnew work by around 200%.",
-        "url": "https://www.skydio.com",
+        "description": "The assignment here was to take a junior team and improve the quality of work they were delivering while also helping to internally overhaul the web department. We used our own product as a headless CMS, and spent a good deal of the year I worked here cleaning up technoical debt and learning best practices. We were able to reduce the size of the codebase by about half, and also improved turnaround time on new work by around 200%.",
+        "url": "https://www.contentstack.com",
         "modal_thumb": "thm-ds.jpg"
       },
       {

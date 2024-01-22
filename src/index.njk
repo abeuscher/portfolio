@@ -7,6 +7,8 @@ eleventyComputed:
 {% extends "layouts/inc/base.njk" %}
 {%- from "macros/debugger/debugger.njk" import debugger -%}
 {%- from "macros/job-listing/job-listing.njk" import joblisting -%}
+{%- from "macros/skill-tile/skill-tile.njk" import skilltile -%}
+{%- from "macros/case-study/case-study.njk" import casestudy -%}
 
 {%- include "layouts/inc/header.njk" -%}
 {% block content %}
@@ -18,14 +20,7 @@ eleventyComputed:
     <h2>{{sitedata.skills.title}}</h2>
     <div class="skills-grid">
       {%- for section in sitedata.skills.sections -%}
-        <div class="skill-tile">
-          <h3>{{section.title}}</h4>
-          <ul>
-            {%- for item in section.items -%}
-              <li>{{item}}</li>
-            {%- endfor -%}
-          </ul>
-        </div>
+        {{skilltile(section)}}
       {%- endfor -%}
     </div>
   </section>
@@ -33,12 +28,7 @@ eleventyComputed:
     <h2>{{sitedata.casestudies.title}}</h2>
     <div class="case-study-grid">
       {%- for site in sitedata.casestudies.sites -%}
-        <div class="case-study">
-          <h3>{{site.title}}</h3>
-          <h4>{{site.role}}</h4>
-          <h5>{{site.tech}}</h5>
-          <p>{{site.description}}</p>
-        </div>
+        {{casestudy(site)}}
       {%- endfor -%}
     </div>
   </section>
@@ -55,6 +45,5 @@ eleventyComputed:
         <strong>{{credential.school}}</strong> - {{credential.degree}}</p>
     {%- endfor -%}
   </section>
-  {{debugger(sitedata)}}
 {% endblock %}
 {%- include "layouts/inc/footer.njk" -%}

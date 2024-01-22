@@ -1,5 +1,8 @@
 body {
   font-family: $font-content;
+  p {
+    line-height: 1.8;
+  }
 }
 .page-wrapper {
   width: 90%;
@@ -51,33 +54,27 @@ nav {
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
-.case-study {
-  flex-basis: 33%;
+@include min-width(md) {
+  .case-study,
+  .skill-tile {
+    flex-basis: 30%;
+  }
 }
 
-.skill-tile {
-  flex-basis: 33%;
-}
 .skills {
   h3 {
     font-size: 14px;
     text-transform: uppercase;
   }
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-      display: inline-block;
-      &:after {
-        content: ", ";
-      }
-      &:last-child {
-        &:after {
-          content: "";
-        }
-      }
-    }
+  p {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  span {
+    margin: 0 0.25em 0.5em 0;
+    padding: 0 0.25em;
+    background: #ccc;
   }
 }

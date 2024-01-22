@@ -1,0 +1,15 @@
+{%- macro casestudy(data) -%}
+    <div class="case-study">
+        <h3>{{data.title}}</h3>
+        <p>
+            <strong>Role:</strong>
+            {{data.role}}</p>
+        <p>
+            <strong>Tech:</strong>
+            {{data.tech}}</p>
+        <details>
+            <summary>Description</summary>
+            <p>{{data.description}}</p>
+        </details>
+    </div>
+{%- endmacro -%}
