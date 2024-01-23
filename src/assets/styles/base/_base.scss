@@ -1,5 +1,14 @@
 body {
   font-family: $font-content;
+  background: #f1f1f1;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-header;
+  }
   p {
     line-height: 1.8;
   }
@@ -8,25 +17,29 @@ body {
   width: 90%;
   max-width: 1280px;
   margin: 0 auto 100px;
+  background: #fff;
+  padding: 0 2.5% 50px;
 }
-
 section {
   h2 {
     border-bottom: 1px solid black;
+    cursor: pointer;
+    &:hover {
+      color: #333;
+    }
   }
-}
-nav {
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    li {
-      display: inline-block;
+  .content {
+    transition: all 0.1s ease-in;
+    transform: scaleY(100%);
+    transform-origin: top;
+    &.hide {
+      height: 0;
+      transform: scaleY(0);
+      overflow: hidden;
     }
   }
 }
+
 .job-listing {
   display: flex;
   .col-left {
@@ -75,6 +88,18 @@ nav {
   span {
     margin: 0 0.25em 0.5em 0;
     padding: 0 0.25em;
-    background: #ccc;
+    background: #f1f1f1;
+  }
+}
+.case-study {
+  border: 1px solid #ccc;
+  padding: 1em 1em 24px;
+  margin-bottom: 12px;
+  img {
+    max-width: 100%;
+    //max-height: 200px;
+  }
+  h3 {
+    margin: 0;
   }
 }

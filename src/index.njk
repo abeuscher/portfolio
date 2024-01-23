@@ -14,11 +14,13 @@ eleventyComputed:
 {% block content %}
   <section class="intro">
     <h2>{{sitedata.overview.intro_header}}</h2>
-    <p>{{sitedata.overview.intro}}</p>
+    <div class="content">
+      <p>{{sitedata.overview.intro}}</p>
+    </div>
   </section>
   <section class="skills">
     <h2>{{sitedata.skills.title}}</h2>
-    <div class="skills-grid">
+    <div class="skills-grid content hide">
       {%- for section in sitedata.skills.sections -%}
         {{skilltile(section)}}
       {%- endfor -%}
@@ -26,7 +28,7 @@ eleventyComputed:
   </section>
   <section class="case-studies">
     <h2>{{sitedata.casestudies.title}}</h2>
-    <div class="case-study-grid">
+    <div class="case-study-grid content">
       {%- for site in sitedata.casestudies.sites -%}
         {{casestudy(site)}}
       {%- endfor -%}
@@ -34,16 +36,20 @@ eleventyComputed:
   </section>
   <section class="jobs">
     <h2>{{sitedata.resume.title}}</h2>
-    {%- for job in sitedata.resume.jobs -%}
-      {{joblisting(job)}}
-    {%- endfor -%}
+    <div class="content hide">
+      {%- for job in sitedata.resume.jobs -%}
+        {{joblisting(job)}}
+      {%- endfor -%}
+    </div>
   </section>
   <section class="education">
     <h2>{{sitedata.education.title}}</h2>
-    {%- for credential in sitedata.education.credentials -%}
-      <p>
-        <strong>{{credential.school}}</strong> - {{credential.degree}}</p>
-    {%- endfor -%}
+    <div class="content hide">
+      {%- for credential in sitedata.education.credentials -%}
+        <p>
+          <strong>{{credential.school}}</strong> - {{credential.degree}}</p>
+      {%- endfor -%}
+    </div>
   </section>
 {% endblock %}
 {%- include "layouts/inc/footer.njk" -%}

@@ -1,6 +1,6 @@
 {
   "config": {
-    "imgPath": "/images/"
+    "imgPath": "/assets/images/"
   },
   "meta": {
     "title": "Alex Beuscher : Portfolio and Resume",
@@ -23,10 +23,6 @@
         "text": "LinkedIn",
         "class": "icon-linkedin",
         "url": "https://www.linkedin.com/in/alex-beuscher-8314157/"
-      },
-      {
-        "text": "PDF",
-        "url": "/resume_alexbeuscher.pdf"
       }
     ],
     "contact": [
@@ -38,6 +34,12 @@
         "text": "(617) 359-6971",
         "url": "tel:6173596971"
       }
+    ],
+    "pdf": [
+      {
+        "text": "PDF Version",
+        "url": "/assets/images/resume_alexbeuscher.pdf"
+      }
     ]
   },
   "footer": {
@@ -46,7 +48,7 @@
   "overview": {
     "title": "overview",
     "intro_header": "Overview",
-    "intro": "I am a web developer living in Amesbury, MA. I have spent most of the past twenty years as a lead or sole tech within marketing departments. Much of my work has been client facing, interacting directly with stakeholders and other producers. Together we have turned business needs and brand identities into successful websites and web applications. I have participated in global product launches, run multiple camera live video shoots, and been with several startups as they have scaled into large companies. I am currently primarily seeking opportunities in the cannabis space but I am always open to conversation."
+    "intro": "I am a web developer and entrepeneur living in Amesbury, MA. I have spent most of the past twenty years as a lead or sole tech within marketing departments. Much of my work has been client facing, interacting directly with stakeholders and other producers. Together we have turned business needs and brand identities into successful websites and web applications. I have participated in global product launches, run multiple camera live video shoots, and been with several startups as they have scaled into large companies. I am currently primarily seeking opportunities in the cannabis space but I am always open to conversation."
   },
   "casestudies": {
     "title": "Case Studies",
@@ -275,7 +277,7 @@
       {
         "name": "SSDS",
         "description": "Solomon Schechter Day School is a private elementary school. I taught video and web design to children ages 9 to 12 at their After School Program. For video, students learned to work with a camera, plan movies, and make short films. In web we learned to make a basic site using a text editor and graphics tools.",
-        "location": "",
+        "location": "Newton, MA",
         "url": "ssdsboston.org",
         "thumb": "thm-ssds.jpg",
         "positions": [

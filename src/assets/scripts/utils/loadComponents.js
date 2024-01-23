@@ -1,5 +1,19 @@
+const SectionAccordion = (el) => {
+  const theHandle = el.querySelector("h2");
+  const theContent = el.querySelector(".content");
+  theHandle.addEventListener("click", (e) => {
+    e.preventDefault();
+    theContent.classList.toggle("hide");
+  });
+};
+
 export const initializeComponents = (scope, selectorsOnly = false) => {
-  const components = [];
+  const components = [
+    {
+      componentFunction: SectionAccordion,
+      selector: "section",
+    },
+  ];
 
   components.forEach((component) => {
     scope.jsModules = scope.jsModules || [];

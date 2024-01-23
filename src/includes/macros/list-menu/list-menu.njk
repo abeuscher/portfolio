@@ -3,7 +3,7 @@
         <ul>
             {%- for item in data -%}
                 <li>
-                    <a href="{{item.url}}">{{item.text}}</a>
+                    <a href="{{item.url}}" class="{{item.class}}">{{item.text}}</a>
                 </li>
             {%- endfor -%}
         </ul>

@@ -1,5 +1,6 @@
 {%- macro casestudy(data) -%}
     <div class="case-study">
+        <img src="/assets/images/{{data.thumbs[0]}}" alt=""/>
         <h3>{{data.title}}</h3>
         <p>
             <strong>Role:</strong>
@@ -8,7 +9,7 @@
             <strong>Tech:</strong>
             {{data.tech}}</p>
         <details>
-            <summary>Description</summary>
+            <summary>Details</summary>
             <p>{{data.description}}</p>
         </details>
     </div>

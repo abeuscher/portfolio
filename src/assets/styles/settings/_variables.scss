@@ -32,7 +32,8 @@ $content-color-main: $off-black;
 $header-color-main: $black;
 $footer-color-main: $off-white;
 
-$font-header: sans-serif;
-$font-content: sans-serif;
+$font-path: "/assets/fonts/";
+$font-header: "Source Sans", sans-serif;
+$font-content: "Source Serif", sans-serif;
 
 $padding-section: 50px 100px 75px;
