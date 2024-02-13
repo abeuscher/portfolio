@@ -3,7 +3,9 @@
   <div class="hidden-thumb"><img src="{{sitedata.config.imgPath + sitedata.meta.site_thumb}}" alt=""/></div>
   <h1>{{sitedata.header.name}}</h1>
   <h2>{{sitedata.header.site_title}}</h2>
-  {{listmenu(sitedata.header.contact,"contact")}}
-  {{listmenu(sitedata.header.nav,"main")}}
-  {{listmenu(sitedata.header.pdf,"pdf")}}
+  <nav>
+    {{listmenu(sitedata.header.contact,"contact")}}
+    {{listmenu(sitedata.header.nav,"main")}}
+    {{listmenu(sitedata.header.pdf,"pdf")}}
+  </nav>
 </header>

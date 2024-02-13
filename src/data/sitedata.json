@@ -1,6 +1,6 @@
 {
   "config": {
-    "imgPath": "/assets/images/"
+    "imgPath": "assets/images/"
   },
   "meta": {
     "title": "Alex Beuscher : Portfolio and Resume",
@@ -55,12 +55,12 @@
     "sites": [
       {
         "title": "Contentstack",
-        "thumbs": ["thm-dynamicsignal-desktop.jpg", "thm-dynamicsignal-mobile.jpg"],
+        "thumbs": ["thm-contentstack.jpg"],
         "role": "Developer",
         "tech": "Gatsby, Contentstack",
         "description": "The assignment here was to take a junior team and improve the quality of work they were delivering while also helping to internally overhaul the web department. We used our own product as a headless CMS, and spent a good deal of the year I worked here cleaning up technoical debt and learning best practices. We were able to reduce the size of the codebase by about half, and also improved turnaround time on new work by around 200%.",
         "url": "https://www.contentstack.com",
-        "modal_thumb": "thm-ds.jpg"
+        "modal_thumb": "thm-contentstack.jpg"
       },
       {
         "title": "Dynamic Signal",
@@ -351,7 +351,7 @@
           "Smartling",
           "Drupal",
           "Cockpit CMS",
-          "vBulletin",
+          "JIRA",
           "FinalCut",
           "Adobe Design Suite",
           "Maya"
@@ -360,11 +360,11 @@
       {
         "title": "Other",
         "items": [
-          "SEO",
-          "Web Content Strategy",
           "Marketing",
-          "Localization",
+          "Web Content Strategy",
           "Video Production",
+          "SEO",
+          "Localization",
           "Audio Editing / Voice Over",
           "DJ",
           "Teacher (uncertified)",

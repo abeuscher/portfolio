@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: $font-content;
   background: #f1f1f1;
   h1,
@@ -14,25 +16,42 @@ body {
   }
 }
 .page-wrapper {
-  width: 90%;
-  max-width: 1280px;
   margin: 0 auto 100px;
-  background: #fff;
-  padding: 0 2.5% 50px;
 }
 section {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 0 25px;
   h2 {
     border-bottom: 1px solid black;
-    cursor: pointer;
-    &:hover {
-      color: #333;
+    position: relative;
+    margin-bottom: 25px;
+    /*
+    &:before {
+      content: "";
+      position: absolute;
+      left: -1em;
+      top: 0.5em;
+      border: 5px solid transparent;
+      border-top-color: black;
+      width: 0;
+      height: 0;
+      transition: transform 0.1s ease-out;
     }
+    */
   }
   .content {
     transition: all 0.1s ease-in;
     transform: scaleY(100%);
     transform-origin: top;
-    &.hide {
+  }
+  &.hide-content {
+    h2 {
+      &:before {
+        transform: rotate(-90deg);
+      }
+    }
+    .content {
       height: 0;
       transform: scaleY(0);
       overflow: hidden;
@@ -48,7 +67,11 @@ section {
   }
   .col-right {
     flex-basis: 80%;
-    margin-left: 50px;
+    margin-left: 25px;
+  }
+  .job-location {
+    font-weight: normal;
+    padding-left: 0.5em;
   }
 }
 .timespan {
@@ -72,7 +95,7 @@ section {
 @include min-width(md) {
   .case-study,
   .skill-tile {
-    flex-basis: 30%;
+    flex-basis: 28%;
   }
 }
 
@@ -92,14 +115,20 @@ section {
   }
 }
 .case-study {
-  border: 1px solid #ccc;
-  padding: 1em 1em 24px;
-  margin-bottom: 12px;
   img {
     max-width: 100%;
-    //max-height: 200px;
   }
-  h3 {
-    margin: 0;
+  .thumb {
+    filter: grayscale(100%);
+    transition: all 0.1s ease-out;
+  }
+  .mobile {
+    display: none;
+  }
+  &:hover {
+    cursor: pointer;
+    .thumb {
+      filter: grayscale(0);
+    }
   }
 }

@@ -20,7 +20,7 @@ eleventyComputed:
   </section>
   <section class="skills">
     <h2>{{sitedata.skills.title}}</h2>
-    <div class="skills-grid content hide">
+    <div class="skills-grid content">
       {%- for section in sitedata.skills.sections -%}
         {{skilltile(section)}}
       {%- endfor -%}
@@ -36,7 +36,7 @@ eleventyComputed:
   </section>
   <section class="jobs">
     <h2>{{sitedata.resume.title}}</h2>
-    <div class="content hide">
+    <div class="content">
       {%- for job in sitedata.resume.jobs -%}
         {{joblisting(job)}}
       {%- endfor -%}
@@ -44,7 +44,7 @@ eleventyComputed:
   </section>
   <section class="education">
     <h2>{{sitedata.education.title}}</h2>
-    <div class="content hide">
+    <div class="content">
       {%- for credential in sitedata.education.credentials -%}
         <p>
           <strong>{{credential.school}}</strong> - {{credential.degree}}</p>

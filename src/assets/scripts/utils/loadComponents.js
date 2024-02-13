@@ -1,9 +1,15 @@
 const SectionAccordion = (el) => {
   const theHandle = el.querySelector("h2");
-  const theContent = el.querySelector(".content");
   theHandle.addEventListener("click", (e) => {
     e.preventDefault();
-    theContent.classList.toggle("hide");
+    el.classList.toggle("hide-content");
+  });
+};
+
+const ModalCaseStudy = (el) => {
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    el.classList.toggle("modal");
   });
 };
 
@@ -12,6 +18,10 @@ export const initializeComponents = (scope, selectorsOnly = false) => {
     {
       componentFunction: SectionAccordion,
       selector: "section",
+    },
+    {
+      componentFunction: ModalCaseStudy,
+      selector: ".case-study",
     },
   ];
 
