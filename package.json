@@ -1,7 +1,7 @@
 {
-  "name": "everybodyloveshead",
+  "name": "alexbeuscher.com",
   "version": "0.0.1",
-  "description": "Site is built with 11ty, Shopify, and head",
+  "description": "Site is built with 11ty",
   "main": "index.js",
   "scripts": {
     "build": "npx eleventy",
@@ -40,6 +40,7 @@
     "pug-loader": "^2.4.0",
     "sass": "^1.53.0",
     "stream-browserify": "^3.0.0",
+    "swiper": "^11.0.6",
     "terser": "^5.18.0",
     "webpack": "^5.87.0"
   },

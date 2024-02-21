@@ -1,26 +1,37 @@
-const SectionAccordion = (el) => {
-  const theHandle = el.querySelector("h2");
-  theHandle.addEventListener("click", (e) => {
-    e.preventDefault();
-    el.classList.toggle("hide-content");
-  });
-};
+import Swiper from "swiper";
 
-const ModalCaseStudy = (el) => {
+const launchCarousel = (el) => {
   el.addEventListener("click", (e) => {
     e.preventDefault();
-    el.classList.toggle("modal");
+    console.log("case study");
+    document.body.classList.add("show-modal");
   });
 };
-
+const InitCarousel = (el) => {
+  const carousel = new Swiper(el);
+};
+const initCloseButton = (el) => {
+  const closeButtons = el.querySelectorAll(".close-button");
+  for (let button of closeButtons) {
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.body.classList.remove("show-modal");
+      console.log("Clicked");
+    });
+  }
+};
 export const initializeComponents = (scope, selectorsOnly = false) => {
   const components = [
     {
-      componentFunction: SectionAccordion,
-      selector: "section",
+      componentFunction: InitCarousel,
+      selector: ".swiper",
     },
     {
-      componentFunction: ModalCaseStudy,
+      componentFunction: initCloseButton,
+      selector: ".modal",
+    },
+    {
+      componentFunction: launchCarousel,
       selector: ".case-study",
     },
   ];

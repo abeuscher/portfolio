@@ -1,14 +1,15 @@
-{%- macro casestudy(data) -%}
-    <div class="case-study" data-info="{{data | dump}}">
+{%- macro casestudy(data, classname) -%}
+    <div class="case-study {{classname}}">
         <div class="thumb"><img src="assets/images/{{data.thumbs[0]}}" alt=""/></div>
         <h3>{{data.title}}</h3>
-        <p>
-            <strong>Role:</strong>
-            {{data.role}}</p>
-        <p>
-            <strong>Tech:</strong>
-            {{data.tech}}</p>
+
         <div class="mobile">
+            <p>
+                <strong>Role:</strong>
+                {{data.role}}</p>
+            <p>
+                <strong>Tech:</strong>
+                {{data.tech}}</p>
             <p>{{data.description}}</p>
             <p>
                 <a href="{{data.url}}" target="_blank" class="button">visit site*</a>

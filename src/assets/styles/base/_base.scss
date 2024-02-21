@@ -12,9 +12,23 @@ body {
     font-family: $font-header;
   }
   p {
-    line-height: 1.8;
+    font-size: 20px;
   }
 }
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  .content {
+    flex-basis: 100%;
+  }
+  .profile-thumb {
+    flex-basis: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
 .page-wrapper {
   margin: 0 auto 100px;
 }
@@ -45,49 +59,41 @@ section {
     transform: scaleY(100%);
     transform-origin: top;
   }
-  &.hide-content {
-    h2 {
-      &:before {
-        transform: rotate(-90deg);
-      }
-    }
-    .content {
-      height: 0;
-      transform: scaleY(0);
-      overflow: hidden;
-    }
-  }
 }
 
 .job-listing {
   display: flex;
+  margin-bottom: 50px;
   .col-left {
     flex-basis: 20%;
     text-align: right;
+    margin-bottom: 50px;
   }
   .col-right {
     flex-basis: 80%;
     margin-left: 25px;
   }
+  h3,
+  p {
+    margin: 0;
+  }
   .job-location {
-    font-weight: normal;
-    padding-left: 0.5em;
+    font-size: 12px;
+    font-style: italic;
+    padding: 0 0 12px;
   }
 }
 .timespan {
   font-size: 12px;
   font-weight: 600;
-  margin: 0;
-  padding: 0;
+  padding: 0 0 12px;
 }
 .position {
   font-size: 14px;
   font-weight: 400;
   font-style: italic;
-  margin-bottom: 0;
 }
-.case-study-grid,
-.skills-grid {
+.case-study-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -95,7 +101,7 @@ section {
 @include min-width(md) {
   .case-study,
   .skill-tile {
-    flex-basis: 28%;
+    flex-basis: 33.3%;
   }
 }
 
@@ -109,13 +115,16 @@ section {
     flex-wrap: wrap;
   }
   span {
-    margin: 0 0.25em 0.5em 0;
+    margin: 0 0.125em 0.25em 0.125em;
     padding: 0 0.25em;
-    background: #f1f1f1;
+    background: #ccc;
+    flex-grow: 1;
+    text-align: center;
   }
 }
-.case-study {
+.case-studies {
   img {
+    width: 100%;
     max-width: 100%;
   }
   .thumb {
@@ -130,5 +139,54 @@ section {
     .thumb {
       filter: grayscale(0);
     }
+  }
+  .modal {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 1);
+    color: white;
+    align-items: center;
+    .close-button {
+      position: absolute;
+      top: 25px;
+      right: 50px;
+      background: #333;
+      border-radius: 50%;
+      width: 1em;
+      height: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3em;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+    }
+    .swiper {
+      max-width: 800px;
+      .thumb {
+        width: 50%;
+        margin: 0 auto;
+        img {
+          outline: 2px solid black;
+          outline-offset: -2px;
+        }
+      }
+      .case-study-slide {
+        padding: 50px;
+      }
+    }
+  }
+}
+body.show-modal {
+  .modal {
+    display: flex;
+    opacity: 1;
   }
 }

@@ -13,7 +13,6 @@ eleventyComputed:
 {%- include "layouts/inc/header.njk" -%}
 {% block content %}
   <section class="intro">
-    <h2>{{sitedata.overview.intro_header}}</h2>
     <div class="content">
       <p>{{sitedata.overview.intro}}</p>
     </div>
@@ -32,6 +31,32 @@ eleventyComputed:
       {%- for site in sitedata.casestudies.sites -%}
         {{casestudy(site)}}
       {%- endfor -%}
+    </div>
+    <div class="modal hide">
+      <button class="close-button">&times;</button>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          {%- for site in sitedata.casestudies.sites -%}
+            <div class="swiper-slide">
+              <div class="case-study-slide">
+                <div class="thumb"><img src="assets/images/{{site.thumbs[0]}}" alt=""/></div>
+                <h3>{{site.title}}</h3>
+
+                <p>
+                  <strong>Role:</strong>
+                  {{site.role}}</p>
+                <p>
+                  <strong>Tech:</strong>
+                  {{site.tech}}</p>
+                <p>{{site.description}}</p>
+                <p>
+                  <a href="{{site.url}}" target="_blank" class="button">visit site*</a>
+                </p>
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
     </div>
   </section>
   <section class="jobs">
