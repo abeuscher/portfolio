@@ -1,5 +1,5 @@
-{%- macro casestudy(data, classname) -%}
-    <div class="case-study {{classname}}">
+{%- macro casestudy(data, index, classname) -%}
+    <div class="case-study {{classname}} {{index}}">
         <div class="thumb"><img src="assets/images/{{data.thumbs[0]}}" alt=""/></div>
         <h3>{{data.title}}</h3>
 

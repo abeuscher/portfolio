@@ -10,21 +10,36 @@ body {
   h5,
   h6 {
     font-family: $font-header;
+    font-weight: 600;
   }
   p {
     font-size: 20px;
+    line-height: 1.6;
   }
 }
 .intro {
-  display: flex;
-  flex-wrap: wrap;
-  .content {
-    flex-basis: 100%;
+  background: #f4f4f4;
+  @include min-width(sm) {
+    .content {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-gap: 25px;
+      align-items: center;
+    }
   }
   .profile-thumb {
-    flex-basis: 100%;
-    img {
-      width: 100%;
+    background-size: cover;
+    background-position: 40% center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    aspect-ratio: 1;
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+      height: 0;
     }
   }
 }
@@ -33,31 +48,14 @@ body {
   margin: 0 auto 100px;
 }
 section {
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 0 0 25px;
   h2 {
-    border-bottom: 1px solid black;
-    position: relative;
-    margin-bottom: 25px;
-    /*
-    &:before {
-      content: "";
-      position: absolute;
-      left: -1em;
-      top: 0.5em;
-      border: 5px solid transparent;
-      border-top-color: black;
-      width: 0;
-      height: 0;
-      transition: transform 0.1s ease-out;
-    }
-    */
+    text-align: center;
+    margin: 25px auto;
   }
   .content {
-    transition: all 0.1s ease-in;
-    transform: scaleY(100%);
-    transform-origin: top;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 25px 0;
   }
 }
 
@@ -73,30 +71,33 @@ section {
     flex-basis: 80%;
     margin-left: 25px;
   }
+  h3 {
+    font-size: 20px;
+    line-height: 1.6;
+  }
   h3,
   p {
     margin: 0;
   }
   .job-location {
     font-size: 12px;
-    font-style: italic;
     padding: 0 0 12px;
   }
 }
 .timespan {
   font-size: 12px;
-  font-weight: 600;
   padding: 0 0 12px;
 }
 .position {
-  font-size: 14px;
-  font-weight: 400;
-  font-style: italic;
+  font-size: 12px;
 }
 .case-study-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+
+  @include min-width(sm) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
 }
 @include min-width(md) {
   .case-study,
@@ -104,8 +105,34 @@ section {
     flex-basis: 33.3%;
   }
 }
-
+.case-study {
+  h3 {
+    margin: 0 0 25px;
+    text-align: center;
+  }
+  &:hover {
+    cursor: pointer;
+    h3 {
+      color: #333;
+    }
+    .thumb {
+      filter: grayscale(100%);
+    }
+  }
+}
 .skills {
+  background: #fff;
+  ul {
+    list-style: none;
+    margin: 0 0 50px;
+    padding: 0;
+    ul {
+      padding: 0 25px 0;
+      list-style: disc;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
   h3 {
     font-size: 14px;
     text-transform: uppercase;
@@ -128,18 +155,12 @@ section {
     max-width: 100%;
   }
   .thumb {
-    filter: grayscale(100%);
-    transition: all 0.1s ease-out;
+    transition: all 0.3s ease-out;
   }
   .mobile {
     display: none;
   }
-  &:hover {
-    cursor: pointer;
-    .thumb {
-      filter: grayscale(0);
-    }
-  }
+
   .modal {
     display: none;
     opacity: 0;
@@ -183,6 +204,10 @@ section {
       }
     }
   }
+}
+.jobs,
+.education {
+  background: white;
 }
 body.show-modal {
   .modal {

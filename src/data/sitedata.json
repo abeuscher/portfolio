@@ -37,7 +37,7 @@
     ],
     "pdf": [
       {
-        "text": "PDF Version",
+        "text": "PDF",
         "url": "/assets/images/resume_alexbeuscher.pdf"
       }
     ]
@@ -48,7 +48,7 @@
   "overview": {
     "title": "overview",
     "intro_header": "Overview",
-    "intro": "I am a web developer and entrepeneur living in Amesbury, MA. I have spent most of the past twenty years as a lead or sole tech within marketing departments. Much of my work has been client facing, interacting directly with stakeholders and other producers. Together we have turned business needs and brand identities into successful websites and web applications. I have participated in global product launches, run multiple camera live video shoots, and been with several startups as they have scaled into large companies. I am currently primarily seeking opportunities in the cannabis space but I am always open to conversation."
+    "intro": "I am a web developer and entrepreneur living in Amesbury, MA. I have spent most of the past twenty years as a lead or sole tech within marketing departments. Much of my work has been client facing, interacting directly with stakeholders and other producers. Together we have turned business needs and brand identities into successful websites and web applications. I have participated in global product launches, run multiple camera live video shoots, and been with several startups as they have scaled into large companies. I am currently primarily seeking opportunities in the cannabis space but I am always open to conversation."
   },
   "casestudies": {
     "title": "Case Studies",
@@ -123,14 +123,6 @@
         "description": "This is a small site for one of 2k's Game Developers. It is fed by a centralized CMS, and statically generated under continuous deploy using TeamCity as the build agent. With smaller clients, there is often a problem of throughput. In this case, the studio's active social media activity to keep their site in the moment, along with relevant aggregated news from mafiagame.com, which showcases the studios current offering, Mafia 3. By organizing the content in chronological order from most recent, returning visitors are given content to engage with the studio on, with very little additional input from their team.",
         "url": "https://hangar13games.com/",
         "modal_thumb": "thm-hangar13-modal.jpg"
-      },
-      {
-        "title": "MCO Productions",
-        "thumbs": ["thm-mco-desktop.jpg"],
-        "role": "Private Contractor",
-        "tech": "Cockpit CMS, Pug, Templating",
-        "description": "This is a site built for Michael O'Neill, who provides DJ services for weddings and events throughout New England. The site is built with Cockpit CMS and custom. Design work was sub contracted, and provided as PSD's. I did the site build using a basic preprocessing script leveraging gulp and browserify, and the templates are done in php. This was a straightforward job with an old friend and client, and I am happy with the result.",
-        "url": "http://mcoproductions.com"
       }
     ]
   },
@@ -140,7 +132,7 @@
     "jobs": [
       {
         "name": "Contentstack",
-        "description": "Contentstack is a headless CMS provider. I currently work as team lead with a group of developers in India to build and support the company's marketing and documentation sites.",
+        "description": "Contentstack is a headless CMS provider. I worked as team lead with a group of developers in Mumbai to build and support the company's marketing and documentation sites.",
         "location": "San Diego, CA",
         "url": "contentstack.com",
         "thumb": "thm-ds.jpg",
@@ -261,7 +253,7 @@
         ]
       },
       {
-        "name": "Freelance Web Design",
+        "name": "Web Consultant / Freelancer",
         "description": "I work on and off as a freelance developer and designer. Along with my web work, I do consulting in basic IT, application training, and print design. Clients have included film, healthcare, environmental, and other concerns. I continue to support a small number of clients.",
         "location": "Allston, MA / Alameda, CA",
         "url": "alexbeuscher.com",
@@ -317,23 +309,25 @@
     "title": "Skills",
     "sections": [
       {
-        "title": "Languages / Frameworks",
+        "title": "Skills",
         "items": [
-          "Javascript",
-          "Node",
-          "React",
-          "Vue",
-          "Angular",
-          "HTML",
-          "CSS",
-          "PHP",
-          "SQL",
-          "C++",
-          "Python"
+          "Marketing",
+          "Web Content Strategy",
+          "Video Production",
+          "SEO",
+          "Localization",
+          "Audio Editing / Voice Over",
+          "DJ",
+          "Technical Writing",
+          "Copy Editing"
         ]
       },
       {
-        "title": "Tools",
+        "title": "Languages / Frameworks",
+        "items": ["Javascript", "Node", "React", "HTML", "CSS", "PHP", "SQL", "C++", "Python"]
+      },
+      {
+        "title": "Tools / Software",
         "items": [
           "Wordpress",
           "Contentful",
@@ -353,21 +347,6 @@
           "JIRA",
           "FinalCut",
           "Adobe Design Suite"
-        ]
-      },
-      {
-        "title": "Other",
-        "items": [
-          "Marketing",
-          "Web Content Strategy",
-          "Video Production",
-          "SEO",
-          "Localization",
-          "Audio Editing / Voice Over",
-          "DJ",
-          "Teacher (uncertified)",
-          "Drums (intermediate)",
-          "Writing (technical, journalistic, copy editing)"
         ]
       }
     ]
