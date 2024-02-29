@@ -37,9 +37,11 @@ eleventyComputed:
       </div>
     </div>
     <div class="modal hide">
-      <button class="close-button">&times;</button>
+
       <div class="swiper">
+        <button class="close-button">&times;</button>
         <div class="swiper-wrapper">
+
           {%- for site in sitedata.casestudies.sites -%}
             <div class="swiper-slide">
               <div class="case-study-slide">
