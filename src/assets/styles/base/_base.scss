@@ -62,7 +62,6 @@ section {
 
 .job-listing {
   display: flex;
-  margin-bottom: 50px;
   .col-left {
     flex-basis: 20%;
     text-align: right;
@@ -70,7 +69,7 @@ section {
   }
   .col-right {
     flex-basis: 80%;
-    margin-left: 25px;
+    margin: 0 0 50px 25px;
   }
   h3 {
     font-size: 20px;
@@ -127,6 +126,9 @@ section {
     list-style: none;
     margin: 0 0 50px;
     padding: 0;
+    &:last-child {
+      margin-bottom: 25px;
+    }
     ul {
       padding: 0 25px 0;
       list-style: disc;
