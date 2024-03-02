@@ -2,23 +2,19 @@
   display: none;
 }
 header {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ebf1f6+0,e2e2e2+100 */
-  background: radial-gradient(
-    ellipse at center,
-    #ebf1f6 0%,
-    #e2e2e2 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: radial-gradient(ellipse at center 60%, #4b4362 0, #0560af 100%);
 
   font-family: $font-header;
   text-align: center;
   padding: 75px 0 0;
   h1 {
     margin: 0;
-    color: #5b5959;
+    color: #f6fde5;
+    font-size: 60px;
   }
   h2 {
     margin: 0 0 50px;
-    color: #5b5959;
+    color: #f6fde5;
   }
   nav {
     background: #fff;
