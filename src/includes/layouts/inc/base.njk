@@ -8,7 +8,7 @@
         <meta name=robots content="index,follow">
         <meta name="description" content="{{ description or metadata.description }}">
         <meta name="keywords" content="{{keywords}}">
-        <link rel="canonical" href="{{permalink}}">
+        <link rel="canonical" href="{{metadata.permalink}}">
         <meta name="subject" content="{{ description or metadata.description }}">
         <meta name="revised" content="{{page.publishDate}}">
         <meta name='Classification' content='Business'>
@@ -24,9 +24,9 @@
         <meta property="og:image" content="{{thumb}}"/>
         <meta property="og:description" content="{{ description or metadata.description }}">
         <meta property="og:site_name" content="{{site.name}}"/>
-        <link rel="icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico">
-        <link rel="stylesheet" href="/assets/styles/main.css"/>
-        <script src="{{ '/assets/scripts/main.js' | url }}" defer></script>
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+        <link rel="stylesheet" href="assets/styles/main.css"/>
+        <script src="assets/scripts/main.js" defer></script>
         {% block head %}{% endblock %}
     </head>
     <body>

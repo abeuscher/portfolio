@@ -1,14 +1,15 @@
 {
   "config": {
-    "imgPath": "/assets/images/"
+    "imgPath": "assets/images/"
   },
   "meta": {
     "title": "Alex Beuscher : Portfolio and Resume",
     "author": "Alex Beuscher",
-    "description": "Alex Beuscher is a web developer living in Alameda, CA. He has most recently worked at Dynamic Signal in San Bruno, CA and is seeking new employment opportunities.",
-    "keywords": "front end developer, web development alameda",
+    "description": "Alex Beuscher is a web developer and entrepreneur living in Amesbury, MA. He has most recently worked as a web developer in California and is seeking opportunities in the cannabis space.",
+    "keywords": "front end developer, web development amesbury",
     "site_url": "alexbeuscher.com",
-    "site_thumb": "al_pic-lg.jpg"
+    "site_thumb": "al_pic-lg.jpg",
+    "permalink": "https://alexbeuscher.com/"
   },
   "header": {
     "name": "Alex Beuscher",
@@ -37,7 +38,7 @@
     ],
     "pdf": [
       {
-        "text": "PDF Version",
+        "text": "PDF",
         "url": "/assets/images/resume_alexbeuscher.pdf"
       }
     ]
@@ -48,19 +49,65 @@
   "overview": {
     "title": "overview",
     "intro_header": "Overview",
-    "intro": "I am a web developer and entrepeneur living in Amesbury, MA. I have spent most of the past twenty years as a lead or sole tech within marketing departments. Much of my work has been client facing, interacting directly with stakeholders and other producers. Together we have turned business needs and brand identities into successful websites and web applications. I have participated in global product launches, run multiple camera live video shoots, and been with several startups as they have scaled into large companies. I am currently primarily seeking opportunities in the cannabis space but I am always open to conversation."
+    "intro": "I am a web developer and entrepreneur living in Amesbury, MA. I have spent some of the past twenty years as a developer within marketing departments. Much of my work has been client facing, interacting directly with stakeholders and content producers. I am currently seeking opportunities in the cannabis space."
+  },
+  "skills": {
+    "title": "Skills",
+    "sections": [
+      {
+        "title": "Skills",
+        "items": [
+          "Marketing",
+          "Web Content Strategy",
+          "Video Production",
+          "SEO",
+          "Localization",
+          "Audio Editing / Voice Over",
+          "DJ",
+          "Technical Writing",
+          "Copy Editing"
+        ]
+      },
+      {
+        "title": "Languages / Frameworks",
+        "items": ["Javascript", "Node", "React", "HTML", "CSS", "PHP", "SQL", "C++", "Python"]
+      },
+      {
+        "title": "Tools / Software",
+        "items": [
+          "Wordpress",
+          "Contentful",
+          "Contentstack",
+          "Sanity.io",
+          "11ty",
+          "Git",
+          "ZenDesk",
+          "Marketo",
+          "Google Analytics / G4",
+          "Figma",
+          "Shopify",
+          "BigCommerce",
+          "Smartling",
+          "Drupal",
+          "Cockpit CMS",
+          "JIRA",
+          "FinalCut",
+          "Adobe Design Suite"
+        ]
+      }
+    ]
   },
   "casestudies": {
     "title": "Case Studies",
     "sites": [
       {
         "title": "Contentstack",
-        "thumbs": ["thm-dynamicsignal-desktop.jpg", "thm-dynamicsignal-mobile.jpg"],
+        "thumbs": ["thm-contentstack.jpg"],
         "role": "Developer",
         "tech": "Gatsby, Contentstack",
         "description": "The assignment here was to take a junior team and improve the quality of work they were delivering while also helping to internally overhaul the web department. We used our own product as a headless CMS, and spent a good deal of the year I worked here cleaning up technoical debt and learning best practices. We were able to reduce the size of the codebase by about half, and also improved turnaround time on new work by around 200%.",
         "url": "https://www.contentstack.com",
-        "modal_thumb": "thm-ds.jpg"
+        "modal_thumb": "thm-contentstack.jpg"
       },
       {
         "title": "Dynamic Signal",
@@ -123,14 +170,6 @@
         "description": "This is a small site for one of 2k's Game Developers. It is fed by a centralized CMS, and statically generated under continuous deploy using TeamCity as the build agent. With smaller clients, there is often a problem of throughput. In this case, the studio's active social media activity to keep their site in the moment, along with relevant aggregated news from mafiagame.com, which showcases the studios current offering, Mafia 3. By organizing the content in chronological order from most recent, returning visitors are given content to engage with the studio on, with very little additional input from their team.",
         "url": "https://hangar13games.com/",
         "modal_thumb": "thm-hangar13-modal.jpg"
-      },
-      {
-        "title": "MCO Productions",
-        "thumbs": ["thm-mco-desktop.jpg"],
-        "role": "Private Contractor",
-        "tech": "Cockpit CMS, Pug, Templating",
-        "description": "This is a site built for Michael O'Neill, who provides DJ services for weddings and events throughout New England. The site is built with Cockpit CMS and custom. Design work was sub contracted, and provided as PSD's. I did the site build using a basic preprocessing script leveraging gulp and browserify, and the templates are done in php. This was a straightforward job with an old friend and client, and I am happy with the result.",
-        "url": "http://mcoproductions.com"
       }
     ]
   },
@@ -140,7 +179,7 @@
     "jobs": [
       {
         "name": "Contentstack",
-        "description": "Contentstack is a headless CMS provider. I currently work as team lead with a group of developers in India to build and support the company's marketing and documentation sites.",
+        "description": "Contentstack is a headless CMS provider. I worked as team lead with a group of developers in Mumbai to build and support the company's marketing and documentation sites. My time was split between managing and coaching the team, writing code, and working with stakeholders to develop a roadmap.",
         "location": "San Diego, CA",
         "url": "contentstack.com",
         "thumb": "thm-ds.jpg",
@@ -154,7 +193,7 @@
       },
       {
         "name": "Dynamic Signal",
-        "description": "Dynamic Signal is a B2B Saas company. I have been in charge of their public facing web properties for the past several years. This includes a public Wordpress Site, a support site at Zendesk, a Marketo Installation, and a Content Hub at Uberflip among others. Along with development and maintenance, my work also involved analytics, strategy, and content creation.",
+        "description": "Dynamic Signal (now FirstUp) is a B2B Saas company. I was in charge of their public facing web properties. This included a public Wordpress Site, a support site at Zendesk, a Marketo Installation, and a Content Hub at Uberflip. Along with development and maintenance, my work also involved analytics, strategy, and content creation.",
         "location": "San Bruno, CA",
         "url": "dynamicsignal.com",
         "thumb": "thm-ds.jpg",
@@ -173,7 +212,7 @@
       },
       {
         "name": "2K Games",
-        "description": "2K Games is a video game publisher of titles such as Borderlands, Civilization, and NBA 2K. I was the first full time web developer in 2K's marketing department. Previous to my arrival, sites were built through managed agencies. After implementing basic processes, source control, and tightening security, I was promoted and my team got a second developer. Together, we modified a centralized CMS, set it up as a REST API, and built a continuous deploy process using Amazon's AWS services. We were then able to consolidate our content editing and localization efforts and the content machine became much more robust. The system we built is still in use today and has expanded to support many other features in the 2K ecosystem.",
+        "description": "2K Games is a video game publisher of titles such as Borderlands, Civilization, and NBA 2K. I was the first full time web developer in 2K's marketing department. Previous to my arrival, sites were built through managed agencies. After implementing basic processes, source control, and tightening security, I was promoted and my team got a second developer. Together, we unified the sites to a single headless CMS. We were then able to consolidate our content editing and localization efforts. The system we built is still in use today and has expanded to support many other features in the 2K ecosystem.",
         "location": "Novato, CA",
         "url": "2k.com",
         "thumb": "thm-2k.jpg",
@@ -261,7 +300,7 @@
         ]
       },
       {
-        "name": "Freelance Web Design",
+        "name": "Web Consultant / Freelancer",
         "description": "I work on and off as a freelance developer and designer. Along with my web work, I do consulting in basic IT, application training, and print design. Clients have included film, healthcare, environmental, and other concerns. I continue to support a small number of clients.",
         "location": "Allston, MA / Alameda, CA",
         "url": "alexbeuscher.com",
@@ -310,67 +349,6 @@
       {
         "school": "Emerson College",
         "degree": "BFA in Writing, Litgerature, and Publishing"
-      }
-    ]
-  },
-  "skills": {
-    "title": "Skills",
-    "sections": [
-      {
-        "title": "Languages / Frameworks",
-        "items": [
-          "Javascript",
-          "Node",
-          "React",
-          "Vue",
-          "Angular",
-          "HTML",
-          "CSS",
-          "PHP",
-          "SQL",
-          "C++",
-          "Python"
-        ]
-      },
-      {
-        "title": "Tools",
-        "items": [
-          "Wordpress",
-          "Contentful",
-          "Contentstack",
-          "Sanity.io",
-          "11ty",
-          "Git",
-          "ZenDesk",
-          "Marketo",
-          "Google Analytics / G4",
-          "Figma",
-          "Shopify",
-          "BigCommerce",
-          "Expression Engine",
-          "Smartling",
-          "Drupal",
-          "Cockpit CMS",
-          "vBulletin",
-          "FinalCut",
-          "Adobe Design Suite",
-          "Maya"
-        ]
-      },
-      {
-        "title": "Other",
-        "items": [
-          "SEO",
-          "Web Content Strategy",
-          "Marketing",
-          "Localization",
-          "Video Production",
-          "Audio Editing / Voice Over",
-          "DJ",
-          "Teacher (uncertified)",
-          "Drums (intermediate)",
-          "Writing (technical, journalistic, copy editing)"
-        ]
       }
     ]
   }

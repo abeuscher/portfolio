@@ -1,17 +1,37 @@
-const SectionAccordion = (el) => {
-  const theHandle = el.querySelector("h2");
-  const theContent = el.querySelector(".content");
-  theHandle.addEventListener("click", (e) => {
+import Swiper from "swiper";
+
+const carousel = new Swiper(".swiper");
+
+const launchCarousel = (el) => {
+  const grid = Array.prototype.slice.call(document.querySelectorAll(".case-study"));
+
+  el.addEventListener("click", (e) => {
     e.preventDefault();
-    theContent.classList.toggle("hide");
+    console.log(grid);
+    carousel.slideTo(grid.indexOf(el));
+    document.body.classList.add("show-modal");
   });
 };
 
+const initCloseButton = (el) => {
+  const closeButtons = el.querySelectorAll(".close-button");
+  for (let button of closeButtons) {
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.body.classList.remove("show-modal");
+      console.log("Clicked");
+    });
+  }
+};
 export const initializeComponents = (scope, selectorsOnly = false) => {
   const components = [
     {
-      componentFunction: SectionAccordion,
-      selector: "section",
+      componentFunction: initCloseButton,
+      selector: ".modal",
+    },
+    {
+      componentFunction: launchCarousel,
+      selector: ".case-study",
     },
   ];
 
