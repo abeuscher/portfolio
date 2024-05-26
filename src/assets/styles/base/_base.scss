@@ -200,7 +200,7 @@ section {
       z-index: 3;
     }
     .swiper {
-      margin-top: 50px;
+      //margin-top: 50px;
       transform: scale(0);
       transition: transform 0.1s 0.2s ease-out;
       max-width: 840px;
@@ -220,7 +220,7 @@ section {
         }
       }
       .case-study-slide {
-        padding: 50px;
+        padding: 100px 50px 25px;
       }
     }
   }
@@ -239,6 +239,7 @@ body.show-modal {
     transform: scale(1);
     overflow-y: scroll;
     display: flex;
+    align-items: start;
     opacity: 1;
     .swiper {
       transform: scale(1);
