@@ -18,7 +18,7 @@
       {
         "text": "Github",
         "class": "icon-github",
-        "url": "https://github.com/abeuscher/portfolio-site"
+        "url": "https://github.com/abeuscher/portfolio"
       },
       {
         "text": "LinkedIn",
@@ -49,7 +49,7 @@
   "overview": {
     "title": "overview",
     "intro_header": "Overview",
-    "intro": "I am a web developer and entrepreneur living in Amesbury, MA. I have spent some of the past twenty years as a developer within marketing departments. Much of my work has been client facing, interacting directly with stakeholders and content producers. I am currently seeking opportunities in the cannabis space."
+    "intro": "I have more than twenty years of experience working in marketing. I have originated digital campaigns, worked with stakeholders on high profile web properties, and managed several small teams to success. I also have experience as a storyteller, voice over artist, and video producer. I enjoy working with other people to create new and entertaining things - be they ad campaigns, products, or experiences."
   },
   "skills": {
     "title": "Skills",
@@ -258,85 +258,15 @@
         ]
       },
       {
-        "name": "Boston Interactive",
-        "description": "Boston Interactive is a leading design firm. My duties as a developer there ranged from markup and CSS layout to some php programming projects and a good deal of javascript work. Among the clients serviced were FAO Schwartz, New England Coffee, MedAssets, and others.",
-        "location": "Charlestown, MA",
-        "url": "bostoninteractive.com",
-        "thumb": "thm-bi.jpg",
-        "positions": [
-          {
-            "time_span": "2007 - 2008",
-            "title": "Web Developer",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "name": "Nurse-Recruiter.com",
-        "description": "Nurse-Recruiter is an online job portal for nurses, similar to Monster.com but specialized. My duties included the design and implementation of an intranet, and redevelopment of web software from PERL into PHP. I also rewrote most of the content on the site for SEO value as well as style, and increased total web visitors as well as goal conversions by over 100% in 10 months.",
-        "location": "Wellesley, MA",
-        "url": "nurse-recruiter.com",
-        "thumb": "thm-nr.jpg",
-        "positions": [
-          {
-            "time_span": "2006 - 2007",
-            "title": "Lead Web Developer",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "name": "MCO Productions",
-        "description": "I have run pub trivia on and off for years, and have experience in DJ'ing and MC'ing functions such as weddings, special events, and parties. I have a full PA system and contract independently.",
-        "location": "Brighton, MA",
-        "url": "mcoproductions.com",
-        "thumb": "thm-mco.jpg",
-        "positions": [
-          {
-            "time_span": "2001 - 2011",
-            "title": "Trivia DJ",
-            "description": ""
-          }
-        ]
-      },
-      {
         "name": "Web Consultant / Freelancer",
-        "description": "I work on and off as a freelance developer and designer. Along with my web work, I do consulting in basic IT, application training, and print design. Clients have included film, healthcare, environmental, and other concerns. I continue to support a small number of clients.",
-        "location": "Allston, MA / Alameda, CA",
+        "description": "I work on and off as a freelance developer and designer. Along with my web work, I do consulting in basic IT, application training, and print design. Clients have included film, healthcare, environmental, and other concerns.",
+        "location": "Amesbury, MA",
         "url": "alexbeuscher.com",
         "thumb": "thm-self.jpg",
         "positions": [
           {
             "time_span": "1998 - present",
             "title": "Self Employed",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "name": "SSDS",
-        "description": "Solomon Schechter Day School is a private elementary school. I taught video and web design to children ages 9 to 12 at their After School Program. For video, students learned to work with a camera, plan movies, and make short films. In web we learned to make a basic site using a text editor and graphics tools.",
-        "location": "Newton, MA",
-        "url": "ssdsboston.org",
-        "thumb": "thm-ssds.jpg",
-        "positions": [
-          {
-            "time_span": "2001 - 2003",
-            "title": "Afterschool Instructor",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "name": "AMICAS, Inc.",
-        "description": "AMICAS provided software for the management and viewing of medical images (x-rays) inside of a web browser on standard PC's. My responsibilities included redesign and implementation of public website as well as the design of an Intranet Site and Customer Support Center.",
-        "location": "Brighton, MA / Chicago, IL",
-        "url": "",
-        "thumb": "thm-amicas.jpg",
-        "positions": [
-          {
-            "time_span": "1997 - 2000",
-            "title": "Webmaster",
             "description": ""
           }
         ]

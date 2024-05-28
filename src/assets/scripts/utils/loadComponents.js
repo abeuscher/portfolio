@@ -7,7 +7,6 @@ const launchCarousel = (el) => {
 
   el.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log(grid);
     carousel.slideTo(grid.indexOf(el));
     document.body.classList.add("show-modal");
   });
@@ -19,9 +18,15 @@ const initCloseButton = (el) => {
     button.addEventListener("click", (e) => {
       e.preventDefault();
       document.body.classList.remove("show-modal");
-      console.log("Clicked");
     });
   }
+  const bg = document.querySelector(".modal");
+  bg.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (e.target.className.indexOf("modal") > -1) {
+      document.body.classList.remove("show-modal");
+    }
+  });
 };
 export const initializeComponents = (scope, selectorsOnly = false) => {
   const components = [
