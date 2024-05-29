@@ -22,7 +22,6 @@ const initCloseButton = (el) => {
   }
   const bg = document.querySelector(".modal");
   bg.addEventListener("click", (e) => {
-    e.preventDefault();
     if (e.target.className.indexOf("modal") > -1) {
       document.body.classList.remove("show-modal");
     }

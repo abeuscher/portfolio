@@ -4,7 +4,7 @@ require("dotenv").config({
 const filters = require("./utils/filters.js");
 const transforms = require("./utils/transforms.js");
 const shortcodes = require("./utils/shortcodes.js");
-const pug = require("pug");
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/assets");
   // Filters
@@ -22,7 +22,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
   });
 
-  eleventyConfig.setLibrary("pug", pug);
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/site.webmanifest");
   eleventyConfig.addPassthroughCopy("src/assets/images");

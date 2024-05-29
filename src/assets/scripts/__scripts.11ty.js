@@ -30,13 +30,6 @@ module.exports = class {
           },
         },
       },
-      {
-        test: /\.m?pug$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: "pug-loader",
-        },
-      },
     ];
 
     // pass environment down to scripts
