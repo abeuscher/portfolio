@@ -1,32 +1,8 @@
 import Swiper from "swiper";
+import initCloseButton from "../modules/close-button";
+import launchCarousel from "../modules/launch-carousel";
 
 const carousel = new Swiper(".swiper");
-
-const launchCarousel = (el) => {
-  const grid = Array.prototype.slice.call(document.querySelectorAll(".case-study"));
-
-  el.addEventListener("click", (e) => {
-    e.preventDefault();
-    carousel.slideTo(grid.indexOf(el));
-    document.body.classList.add("show-modal");
-  });
-};
-
-const initCloseButton = (el) => {
-  const closeButtons = el.querySelectorAll(".close-button");
-  for (let button of closeButtons) {
-    button.addEventListener("click", (e) => {
-      e.preventDefault();
-      document.body.classList.remove("show-modal");
-    });
-  }
-  const bg = document.querySelector(".modal");
-  bg.addEventListener("click", (e) => {
-    if (e.target.className.indexOf("modal") > -1) {
-      document.body.classList.remove("show-modal");
-    }
-  });
-};
 export const initializeComponents = (scope, selectorsOnly = false) => {
   const components = [
     {
@@ -34,7 +10,9 @@ export const initializeComponents = (scope, selectorsOnly = false) => {
       selector: ".modal",
     },
     {
-      componentFunction: launchCarousel,
+      componentFunction: (el) => {
+        launchCarousel(el, carousel);
+      },
       selector: ".case-study",
     },
   ];
